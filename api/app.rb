@@ -10,7 +10,7 @@ use Rack::Cors do
   end
 end
 
-db = PG.connect(dbname: 'literaly', user: 'postgres', password: 'g33847834')
+db = PG.connect(dbname: '<your database>', user: '<your user>', password: '<your password>')
 
 get '/books' do
   content_type :json

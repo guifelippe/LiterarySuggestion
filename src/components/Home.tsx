@@ -41,9 +41,9 @@ const Home: React.FC = () => {
     <div className="home">
       <h1>Book Recommender</h1>
       <div>
-        <label>Escolha um gênero de livro:</label>
+        <label>Choose a book genre:</label>
         <select value={genre} onChange={(e) => setGenre(e.target.value)}>
-          <option value="">Selecione um gênero</option>
+          <option value="">Select a genre</option>
           {genres.map((g) => (
             <option key={g.id} value={g.id}>
               {g.name}
@@ -51,13 +51,13 @@ const Home: React.FC = () => {
           ))}
         </select>
       </div>
-      <button onClick={() => getRandomBook(parseInt(genre))}>Obter Recomendação</button>
+      <button onClick={() => getRandomBook(parseInt(genre))}>Get Recommendation</button>
       {error && <p className="error-message">{error}</p>}
       {randomBook && (
         <div className="book-info">
-          <h2>Título: {randomBook.title}</h2>
+          <h2>Title: {randomBook.title}</h2>
           <img className="responsive-image" src={randomBook.image} alt={randomBook.title} />
-          <p>Resumo:<br/> {randomBook.summary}</p>
+          <p>Summary:<br/> {randomBook.summary}</p>
         </div>
       )}
     </div>
