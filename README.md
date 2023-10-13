@@ -23,31 +23,36 @@ The Book Recommendation API is a service that provides random book recommendatio
     ```bash
     git clone https://github.com/guifelippe/-LiterarySuggestion.git
 
-2. install dependencies:
+2. Navigate to the directory:
+
+   ```bash
+   cd LiterarySuggestion
+
+3. install dependencies:
 
     ```bash
     npm install
 
-3. Start the React application:
+4. Start the React application:
 
     ```bash
     npm start
 
-4. Access the application in your browser at http://localhost:3000.
+5. Access the application in your browser at http://localhost:3000.
 
-5. Navigate to the api directory:
+6. Navigate to the api directory:
 
     ```bash
     cd api
 
-5. Install API dependencies:
+7. Install API dependencies:
 
     ```bash
     bundle install
 
-6. Start the API:
+8. Start the API:
 
     ```
     ruby app.rb
 
-7. Access the api in your browser at http://localhost:4567.
+9. Access the api in your browser at http://localhost:4567.
