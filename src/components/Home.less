@@ -1,0 +1,61 @@
+.home {
+    text-align: center;
+    margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.712);
+    padding: 1rem;
+    border-radius: 20px;
+    height: auto;
+  
+    h1 {
+      font-size: 2rem;
+      font-family: cursive;
+    }
+  
+    label {
+      font-size: 1.2rem;
+    }
+  
+    select {
+      padding: 0.5rem;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+      margin-left: 0.5rem;
+    }
+  
+    button {
+      padding: 0.5rem 1rem;
+      background-color: #0074d9;
+      color: white;
+      border: none;
+      margin-top: 1rem;
+      cursor: pointer;
+      border-radius: 50px;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #3f00b3;
+      }
+    }
+}
+  
+img.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+  
+@media screen and (min-width: 768px) {
+    .home {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+  
+      label {
+        margin-bottom: 0;
+        margin-right: 1rem;
+      }
+  
+      select {
+        margin-bottom: 0;
+      }
+    }
+}
